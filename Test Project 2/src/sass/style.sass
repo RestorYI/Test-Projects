@@ -1,0 +1,388 @@
+@import "normalizez.css"
+@import "resets.css"
+
+@font-face 
+    font-family: "ProximaNova-Light"
+    src: url('../fonts/ProximaNova-Light.ttf')
+    font-weight: regular
+    font-style: normal
+
+
+html
+    font-family: 'ProximaNova-Light'
+    font-weight: regular
+
+
+
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1440px
+    margin: 0 auto
+
+.main-section
+    position: relative
+    margin-bottom: 116px
+    padding: 0
+    width: 1440px
+    height: 662px
+    background: url(../img/bgimg.png) center/cover no-repeat
+    &__contact-box
+        display: flex
+        height: 32px
+        justify-content: space-between
+        align-items: center
+        padding: 0 46px 0 46px
+        background: #FFFFFF
+        opacity: 0.6
+        margin-bottom: 10px
+        min-width: 1440px
+        p
+            font-size: 10px
+        span
+            color: #919BB6
+        a
+            font-size: 10px
+    &__nav-menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 46px 0 46px
+        p
+            font-size: 12px
+    &__booking
+        position: absolute
+        width: 810px
+        height: 69px
+        background-color:  #FFFFFF
+        box-shadow: 0px 4px 30px rgba(142, 142, 142, 0.25)
+.navmenu-hr
+    border: 0.1px solid #AEAEAE
+    height: 44px
+.booking-hr
+    border: 0.1px solid #AEAEAE
+    height: 44px
+
+.main-section__booking
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 0 0px 0 31px
+    position: relative
+    right: -300px
+    bottom: -500px
+    box-shadow: 0px 4px 30px rgba(142, 142, 142, 0.25)
+
+
+
+
+
+.booking-block
+    display: flex
+    flex-direction: column
+    p
+        margin-bottom: 5px
+        font-size: 14px
+        color: #919BB6
+
+.input-lg
+    width: 100px
+    border: none
+    border-radius: 0rem
+    display: flex
+    padding: 0px
+
+
+.input-number-group 
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-justify-content: center
+      -ms-flex-pack: center
+          justify-content: center 
+  max-width: 90px
+  margin: 0 auto
+
+
+.input-number-group input[type=number]::-webkit-inner-spin-button,
+.input-number-group input[type=number]::-webkit-outer-spin-button 
+  -webkit-appearance: none
+          appearance: none
+
+
+.input-number-group .input-group-button 
+  line-height: calc(64px/2 - 5px)
+
+
+.input-number-group .input-number 
+  border: none
+  width: 32px
+  padding: 0 8px
+  vertical-align: top
+  text-align: center
+  outline: none
+  display: block
+  margin: 0
+
+
+.input-number-group .input-number,
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment 
+  height: 32px
+  -webkit-user-select: none
+     -moz-user-select: none
+      -ms-user-select: none
+          user-select: none
+  border-radius: 0
+
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment 
+  display: inline-block
+  width: 21px
+  color: #b2b2b2
+  text-align: center
+  cursor: pointer
+
+
+
+.boocking-button
+    width: 190px
+    height: 69px
+    border: none
+    background-color: #283819
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0px 4px 30px rgba(142, 142, 142, 0.25)
+    p
+        color: white
+
+.first-section
+    &__offers
+        display: flex
+        position: relative
+
+    &__title
+        display: flex
+        justify-content: center
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        h1
+            font-size: 33px
+            margin-bottom: 53px
+        p
+            color: #B1BE7B
+            font-size: 14px
+            margin-bottom: 16px
+
+
+
+
+
+.offers-left
+    width: 552.33px
+    height: 494.58px
+    background: #283819
+    padding-left: 42px
+    display: flex
+    flex-direction: column
+    padding: 147px 0 115px 47px
+    margin-bottom: 160px
+    &__selected
+        width: 27px
+        margin: 0 10px 0 0
+    span
+        color: white
+        display: flex
+        flex-direction: row
+        align-items: center
+        align-content: center
+        margin-bottom: 15px
+
+    p
+        cursor: pointer
+        margin-bottom: 21px
+        color: #ffffff4d
+        font-size: 13px
+        cursor: pointer
+
+
+.offers-right
+    display: flex
+    flex-direction: row
+    align-items: center
+    position: absolute
+    left: 460px
+    top: 85px
+
+    img
+        width: 472.32px
+        height: 323.83px
+        margin-right: 60px
+
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__titlehr
+        color: #283819
+        width: 21px
+        margin: 0 0 0 0
+    &__type
+        font-size: 20px
+        color: #283819
+        margin-bottom: 15px
+        margin-top: 20px
+    &__price
+        font-size: 18px
+        color: #283819
+        margin-bottom: 20px
+    &__description
+        display: flex
+        flex-direction: column
+        font-size: 14px
+        margin-bottom: 40px
+        p
+            margin-bottom: 8px
+            &:last-child
+                margin-bottom: 0
+
+    &__boocking-button
+        height: 38px
+        width: 185px
+        border: none
+        background: white
+    &__hr
+        color: #283819
+        width: 185px
+        margin: 0 0 0 0
+
+
+
+.second-section
+    width: 1440px
+    height: 684px
+    background: url(../img/bgimg2.png) center/cover no-repeat
+    position: relative
+    margin-bottom: 80px
+    &__play-palaceholder
+        position: absolute
+        top: 310px
+        left: 635px
+
+    &__textwraper
+        display: flex
+        flex-direction: column
+        width: 380px
+        height: 684px
+        justify-content: flex-end
+        padding: 0 0 41px 42px
+    &__tile
+        font-size: 36px
+        text-decoration: underline
+        text-transform: uppercase
+        line-height: 118.9%
+        letter-spacing: 0.05rem
+        margin-bottom: 6px
+
+
+
+
+input[id^="spoiler"]
+    display: none
+
+input[id^="spoiler"] + label 
+    display: block
+    width: 200px
+    margin: 0 auto
+    padding: 15px 20px
+    background: #ffffff
+    color: #000000
+    text-align: center
+    font-size: 18px
+    border-radius: 8px
+    cursor: pointer
+    transition: all .6s
+i
+    font-size: 13px
+
+input[id^="spoiler"]:checked + label 
+    color: #333
+    background: #ccc
+
+input[id^="spoiler"] ~ .spoiler 
+    width: 1440px
+    height: 0
+    overflow: hidden
+    opacity: 0
+    margin: auto 0
+    background: #eee
+    border: 1px solid #ccc
+    border-radius: 8px
+    transition: all .6s
+
+input[id^="spoiler"]:checked + label + .spoiler
+    height: auto
+    opacity: 1
+    padding: 10px
+
+
+
+.footer
+    &__contact-block
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding: 32px 47px 25px 46px
+    &__contacts
+        display: flex
+        flex-direction: row
+        align-items: center
+        text-align: center
+        p
+            margin-right: 50px
+            display: flex
+            flex-direction: column
+            
+            &:last-child
+                margin-right: 0
+        span
+            color: #696767
+            font-size: 12px
+            margin-top: 10px
+    &__socials
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__end
+        flex-direction: row
+        justify-content: space-between
+        padding: 17px 40px 38px 56px
+    &__map-link
+        p
+            margin-right: 10px
+    &__designer
+        p
+            margin-right: 5px
+
+
+.divider
+    margin: 0 0 0 0
+                
+
+.social
+    font-size: 13px
+    text-decoration: uppercase
+    margin-right: 40px
+    &:last-child
+                margin-right: 0
+
+.flex
+    display: flex
+
+
+
+
